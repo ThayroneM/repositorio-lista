@@ -1,2 +1,1 @@
-# repositorio-lista
-App simples listando os repositorios publicos da conta
+App simples com a lista dos repositórios
