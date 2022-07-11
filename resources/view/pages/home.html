@@ -1,0 +1,41 @@
+
+<div style="text-align: center">
+    <h2>Filtros</h2>
+</div>
+<div class="row justify-content-md-center">
+    <div class="col-auto form-check" style="margin: 10px;">
+        <input class="form-check-input" type="checkbox" value="arquivado" id="chkArquivado">
+        <label class="form-check-label" for="chkArquivado">
+          Arquivados
+        </label>
+    </div>
+    <div class="col-auto form-check" style="margin: 10px;">
+        <input class="form-check-input" type="checkbox" value="desabilitado" id="chkDesabilitado">
+        <label class="form-check-label" for="chkDesabilitado">
+          Desabilitados
+        </label>
+    </div>
+    <div class="col-auto form-check" style="margin: 10px;">
+        <input class="form-check-input" type="checkbox" value="download" id="chkDownload" checked>
+        <label class="form-check-label" for="chkDownload">
+          Feito Downloads
+        </label>
+    </div>
+</div>
+<table id="tblRepo" class="table table-bordered text-light">
+    <thead>
+        <tr>
+            <th>Repositorio</th>
+            <th>URL</th>
+            <th>Data Ultimo Commit</th>
+            <th>Arquivado</th>
+            <th>Desabilitado</th>
+            <th>Feito Downloads</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyRepositorios">
+        {{dados}}
+    </tbody>
+</table>
+
+<script src="resources/libs/js/tabela.js"></script>
