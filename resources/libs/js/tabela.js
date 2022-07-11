@@ -29,6 +29,8 @@ window.addEventListener("load", function(event) {
             pesquisa = "Não";
         }
 
+        tabelaRepo.column(4).search('').draw();
+        tabelaRepo.column(5).search('').draw();
         tabelaRepo.column(3).search(pesquisa).draw();
     });
 
@@ -41,7 +43,8 @@ window.addEventListener("load", function(event) {
             pesquisa = "Não";
         }
 
-        console.log(tabelaRepo.column(4))
+        tabelaRepo.column(3).search('').draw();
+        tabelaRepo.column(5).search('').draw();
         tabelaRepo.column(4).search(pesquisa).draw();
     });
 
@@ -54,8 +57,19 @@ window.addEventListener("load", function(event) {
             pesquisa = "Não";
         }
 
-        console.log(pesquisa)
+        tabelaRepo.column(3).search('').draw();
+        tabelaRepo.column(4).search('').draw();
         tabelaRepo.column(5).search(pesquisa).draw();
+    });
+
+    $('#chkTodos').on('change', function(e){
+
+        if($(this)[0].checked == true){
+            tabelaRepo.column(3).search('').draw();
+            tabelaRepo.column(4).search('').draw();
+            tabelaRepo.column(5).search('').draw();
+        }
+        
     });
 
 })

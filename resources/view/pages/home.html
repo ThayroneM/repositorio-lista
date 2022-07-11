@@ -3,7 +3,31 @@
     <h2>Filtros</h2>
 </div>
 <div class="row justify-content-md-center">
-    <div class="col-auto form-check" style="margin: 10px;">
+    <div class="col-auto form-check" style="margin: 5px;">
+        <input class="form-check-input" type="radio" name="radioFiltro" id="chkArquivado">
+        <label class="form-check-label" for="chkArquivado">
+         Arquivados
+        </label>
+    </div>
+    <div class="col-auto form-check" style="margin: 5px;">
+        <input class="form-check-input" type="radio" name="radioFiltro" id="chkDesabilitado">
+        <label class="form-check-label" for="chkDesabilitado">
+        Desabilitados
+        </label>
+    </div>
+    <div class="col-auto form-check" style="margin: 5px;">
+        <input class="form-check-input" type="radio" name="radioFiltro" id="chkDownload">
+        <label class="form-check-label" for="chkDownload">
+        Feito Downloads
+        </label>
+    </div>
+    <div class="col-auto form-check" style="margin: 5px;">
+        <input class="form-check-input" type="radio" name="radioFiltro" id="chkTodos" checked>
+        <label class="form-check-label" for="chkTodos">
+         Todos
+        </label>
+    </div>
+    <!-- <div class="col-auto form-check" style="margin: 10px;">
         <input class="form-check-input" type="checkbox" value="arquivado" id="chkArquivado">
         <label class="form-check-label" for="chkArquivado">
           Arquivados
@@ -20,7 +44,7 @@
         <label class="form-check-label" for="chkDownload">
           Feito Downloads
         </label>
-    </div>
+    </div> -->
 </div>
 <table id="tblRepo" class="table table-bordered text-light">
     <thead>
