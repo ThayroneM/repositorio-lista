@@ -23,7 +23,7 @@ window.addEventListener("load", function(event) {
     $('#chkArquivado').on('change', function(e){
 
         let pesquisa =  "";
-        if($(this).checked == true){
+        if($(this)[0].checked == true){
             pesquisa = "Sim";
         }else{
             pesquisa = "Não";
@@ -35,7 +35,7 @@ window.addEventListener("load", function(event) {
     $('#chkDesabilitado').on('change', function(e){
 
         let pesquisa =  "";
-        if($(this).checked == true){
+        if($(this)[0].checked == true){
             pesquisa = "Sim";
         }else{
             pesquisa = "Não";
@@ -48,47 +48,14 @@ window.addEventListener("load", function(event) {
     $('#chkDownload').on('change', function(e){
 
         let pesquisa =  "";
-        if($(this).checked == true){
+        if($(this)[0].checked == true){
             pesquisa = "Sim";
         }else{
             pesquisa = "Não";
         }
 
-        console.log(tabelaRepo.column(5))
+        console.log(pesquisa)
         tabelaRepo.column(5).search(pesquisa).draw();
     });
 
-    
-
-    $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
-        
-        let desabilitado = ""
-        let arquivado = ""
-        let download = ""
-    
-        if($('#chkDesabilitado')[0].checked == true){
-            desabilitado = "Sim"
-        }else{
-            desabilitado = "Não"
-        }
-
-        if($('#chkArquivado')[0].checked == true){
-            arquivado = "Sim"
-        }else{
-            arquivado = "Não"
-        }
-
-        if($('#chkDownload')[0].checked == true){
-            download = "Sim"
-        }else{
-            download = "Não"
-        }
-        
-        console.log(download)
-        console.log(data[5])
-        if (arquivado == data[3] && desabilitado == data[4] && download == data[5]) {
-            return true;
-        }
-        return false;
-    });
 })

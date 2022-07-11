@@ -40,24 +40,12 @@ class Home extends Page{
 
             $htmlRepositorio .= '
                 <tr>
-                    <td>
-                    '.$repo['full_name'].'
-                    </td>
-                    <td>
-                    '.$repo['url'].'
-                    </td>
-                    <td>
-                    '.$data.'
-                    </td> 
-                    <td>
-                    '.$arquivoHtml.'
-                    </td>  
-                    <td>
-                    '.$disableHtml.'
-                    </td> 
-                    <td>
-                    '.$downloadHtml.'
-                    </td> 
+                    <td>'.$repo['full_name'].'</td>
+                    <td>'.$repo['url'].'</td>
+                    <td>'.$data.'</td> 
+                    <td>'.$arquivoHtml.'</td>  
+                    <td>'.$disableHtml.'</td> 
+                    <td>'.$downloadHtml.'</td> 
                 </tr>
             ';
         }

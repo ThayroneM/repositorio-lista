@@ -5,7 +5,7 @@ namespace App\Http;
 class Methods{
 
     protected static $site = 'https://api.github.com';
-    protected static $token = 'token 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';
+    protected static $token = 'token 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';
 
     public static function get($uri, $params = ''){
         $ch = curl_init();
